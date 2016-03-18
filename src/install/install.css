@@ -1,0 +1,342 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #FDFDFD;
+}
+body, td, th, input, select, textarea, option, optgroup {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+/* --- Header --.- */
+header .div1 {
+	height: 56px;
+	padding: 0px 30px;
+	color: #FFFFFF;
+	background: url('img/header_bg.png') repeat-x;
+	min-width: 900px;
+}
+header .div2 {
+	color: #FFFFFF;
+	padding: 10px 0px 0px 0px;
+	float: left;
+	font-size:32px;
+	width: 300px;
+}
+
+header .div2 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header .div3 {
+	font-size: 16px;
+	color: #FFF;
+	text-align: right;
+	padding: 5px 0px 0px 0px;
+	float: right;
+}
+header .div2 span {
+	font-weight: bold;
+}
+
+footer {
+	background: #494d68;
+	height: 90px;
+	padding-top: 38px;
+	text-align: center;
+	font-size: 12px;
+	color: #dedede;
+	position: relative;
+	margin-top: -128px;
+	clear: both;
+}
+
+footer a, footer a:visited {
+	color: #dedede;
+}
+
+#content {
+	background: #FDFDFD 0px 1px repeat-x;
+	padding: 10px 30px 0px 30px;
+	min-width: 900px;
+	padding-bottom: 128px;
+}
+
+#stepbar {
+	background-color: #F1F1F1;
+	width: 170px !important;
+	width: 170px;
+	height: 400px;
+	font-size: 11px;
+	float: left;
+	text-align: left;
+}
+#step {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	color: #666666;
+	padding: 10px 0px 20px 80px;
+	white-space: nowrap;
+	position: relative;
+	float: left;
+}
+
+.step-on {
+	color: #fff;
+	background: #232373;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 10px;
+	border: 1px solid #ccccfe;
+	margin-bottom: 2px;
+}
+
+.step-off {
+  font-size: 13px;
+	color: #999999;
+	font-weight: bold;
+	padding: 10px;
+	border: 1px solid #ccccfe;
+	margin-bottom: 2px;
+}
+
+#right {
+  float: right;
+  width: 555px !important;
+  width: 545px;
+  border-left: 1px solid #ccccfe;
+  padding-left: 10px;
+
+}
+
+#break {
+	height: 20px;
+}
+
+.licensetext {
+  text-align: left;
+}
+
+.license {
+  padding: 0px;
+  width: 530px;
+  height: 300px;
+}
+
+.license-form {
+  float: left;
+}
+
+.install {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	padding: 10px;
+	border: 1px solid #ccccfe;
+	width: 750px;
+	background: #F1F1F1;
+}
+	
+.install h1 {
+	font-size: 15px;
+	font-weight: bold;
+ 	color: #232373;
+	padding: 10px 10px 4px 0px;
+ 	text-align: left;
+	border-bottom: 1px solid #232373;
+	margin-bottom: 10px;
+
+}
+
+.install-form {
+  position: relative;
+	text-align: left;
+	float: right;
+	width: 69%;
+}
+
+.install-text {
+  position: relative;
+	text-align: left;
+	width: 30%;
+	float: left;
+}
+
+.form-block {
+	border: 1px solid #cccccc;
+	background: #E9ECEF;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+
+.left {
+  position: relative;
+	text-align: left;
+	float: left;
+	width: 50%;
+}
+
+.right {
+  position: relative;
+	text-align: left;
+	float: right;
+	width: 50%;
+}
+
+.far-right {
+  position: relative;
+	text-align: right;
+	float: right;
+}
+
+.far-left {
+  position: relative; 
+	text-align: left;
+	float: left;
+}
+
+.clr {
+    clear:both;
+    }
+
+.ctr {
+	text-align: center;
+}
+
+.button {
+	border : solid 1px #cccccc;
+	background: #ecefff;
+	color : #666666;
+	font-weight : bold;
+	font-size : 11px;
+	padding: 4px;
+}
+
+table.content {
+	width: 95%;
+}
+
+table.content td {
+	color : #333333;
+	font-size: 11px;
+	width: 50%;
+}
+
+table.content2 {
+	width: 90%;
+}
+
+table.content2 td {
+	color : #333333;
+	font-size: 11px;
+}
+
+.toggle {
+	font-weight: bold;
+}
+
+
+/*  old stuff */
+
+
+a {
+	color: #232373;
+	font-weight : bold;
+	text-decoration: none;
+}
+a:hover {
+	color : #30569D;
+	text-decoration : underline;
+}
+a:active {
+	color : #FF9900;
+	text-decoration : underline;
+}
+
+.inputbox {
+
+	color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+	z-index: -3;
+	font-size: 11px;
+}
+
+.small {
+	color : #333;
+	font-size : 10px;
+}
+
+.error {
+	color : #cc0000;
+	font-size : 12px;
+	font-weight : bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+select.options, input.options {
+	font-size: 8pt;
+	border: 1px solid #999;
+}
+
+form {
+	margin: 0px 0px 0px 0px;
+}
+
+
+.dottedline {
+	border-bottom: 1px solid #333;
+}
+
+.installheader {
+	color : #FFF;
+	font-size : 24px;
+}
+
+textarea {
+	color : #0000dd;
+	font-family : Arial;
+	font-size : 11px;
+	border: 1px;
+}
+
+
+.warning {
+	padding: 10px;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	width: 750px;
+	background: #FFD1D1 url('img/warning.png') 10px center no-repeat;
+	border: 1px solid #F8ACAC;
+	color: #555555;
+}
+
+
+#container {
+	height: 100%;
+}
+#content {
+	background: #FDFDFD;
+	padding: 10px 30px 0px 30px;
+	min-width: 900px;
+	padding-bottom: 128px;
+}
+body  #container {
+	height: auto;
+	min-height: 100%;
+}
+
+

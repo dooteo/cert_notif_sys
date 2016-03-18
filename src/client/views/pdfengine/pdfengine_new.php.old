@@ -1,0 +1,82 @@
+<script language="javascript">
+	function addRow(tableID) {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+            if (rowCount == 4) {
+		document.getElementById("delField").innerHTML = '<input type="button" value="<?php echo $text_del_field; ?>" onclick="deleteRow(\'dataTable\')" />';
+            }
+            var row = table.insertRow(rowCount);
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = "#" + (rowCount -2) + " PDF field";
+
+            var cell2 = row.insertCell(1);
+            var element = document.createElement("input");
+            element.type = "text";
+            element.name = "field[]";
+            element.size = "30";
+            cell2.appendChild(element);
+            
+            var cell3 = row.insertCell(2);
+            cell3.innerHTML = "";
+
+            var cell4 = row.insertCell(3);
+            cell4.innerHTML = "";
+ 
+        }
+ 
+        function deleteRow(tableID) {
+            try {
+              var table = document.getElementById(tableID);
+              var rowCount = table.rows.length;
+              if (rowCount > 4) {
+                table.deleteRow(rowCount -1);
+              } 
+              if (rowCount < 6) {
+                document.getElementById("delField").innerHTML = "";
+              }
+            }catch(e) {
+                alert(e);
+            }
+        }
+</script>
+
+<?php if ($error_warning) { ?>
+  <div class="warning"><?php echo $error_warning; ?></div>
+<?php } ?>
+  <div class="box">
+    <div class="heading">
+      <h1><img src="/admin/theme/img/pdf.png" alt="" /> <?php echo $heading_title; ?></h1>
+      <div class="buttons"><a onclick="$('#form').submit();" tabindex="14" class="button"><?php echo $button_save; ?></a><a href="<?php echo $path_cancel; ?>" tabindex="15" class="button"><?php echo $button_cancel; ?></a></div>
+    </div>
+    <div class="content">
+      <form action="<?php echo $path_insert; ?>" method="post" enctype="multipart/form-data" id="form">
+          <table id="dataTable" class="form">
+            <tr>
+              <td><?php echo $text_name; ?></td>
+              <td><input type="text" name="name" tabindex="1" value="" size="30" />
+              <td><?php echo $text_company; ?></td>
+              <td><?php echo $companies; ?></td>
+            </tr>
+            <tr>
+              <td><?php echo $text_filename; ?></td>
+              <td><input type="file" value="" name="upfile" tabindex="2" size="30"/></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><?php echo $text_comment; ?></td>
+              <td colspan="3"><textarea rows="5" cols="100" name="comment"></textarea></td>
+            </tr>
+            <tr>
+              <td><?php echo $text_field; ?></td>
+              <td>
+                <input type="text" name="field[]" tabindex="3" value="" size="30" />
+                
+              </td>
+              <td><input type="button" value="<?php echo $text_add_new_field; ?>" onclick="addRow('dataTable')" /></td>
+              <td id="delField"></td>
+            </tr>
+          </table>
+      </form>
+  </div>
+</div>
